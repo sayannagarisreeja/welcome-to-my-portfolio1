@@ -1,0 +1,232 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <title>WELCOME TO MY PROTFOLIO</title>
+    <head>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #7070ba;
+            color: #998de9;
+        }
+        header {
+            background-color: #00bfff;
+            color: rgb(1, 59, 248);
+            padding: 25px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            background-color: #9baf4b;
+            /* Dark Gray */
+            text-align: center;
+            padding: 12px 0;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+        }
+        nav a:hover {
+            color: #f8fc07;
+            /* Tomato */
+            text-decoration: underline;
+        }
+        section {
+            padding: 25px;
+            margin: 20px auto;
+            max-width: 900px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+        section:hover {
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+        }
+        section h2 {
+            color: #000000;
+            /* BLACK */
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        table th,
+        table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        table th {
+            background-color: #f1f1f1;
+            font-weight: 600;
+            color: #333;
+        }
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 12px 0;
+            font-size: 1.2rem;
+        }
+        ul li strong {
+            color: #007bff;
+        }
+        form {
+            max-width: 650px;
+            margin: 25px auto;
+        }
+        form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        form input,
+        form textarea,
+        form button {
+            width: 100%;
+            padding: 14px;
+            margin-bottom: 18px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+        form input:focus,
+        form textarea:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+        form button {
+            background-color: #ee060e;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        form button:hover {
+            background-color: #378500;
+        }
+        form button:active {
+            background-color: #378500;
+        }
+    </style>
+    </head> 
+    <script>
+        function changeTheme() {
+    document.body.classList.toggle("dark");
+}
+
+function addProject() {
+    let project = prompt("Enter project name:");
+
+    if (project) {
+        let li = document.createElement("li");
+        li.textContent = project;
+        document.getElementById("projectList").appendChild(li);
+    }
+}
+    </script> 
+<body>
+    <header>
+<h1>WELCOME TO MY PORTFOLIO</h1>
+    </header>
+    <nav class="sidebar">
+        <li><a href="#Home">Home</a>| 
+        <a href="#About">About</a> |
+        <a href="#Skills">Skills</a> |
+        <a href="Projects">Project</a>|
+        <a href="#Contact">Contact</a></li>
+    </nav>
+
+    <section id="Home">
+     <h1>Hi I'am Sreeja 🚀 Your passion about building responsive 
+        <br>and user-friendly websites</br></h1>
+    </section>
+    <Section id="About">
+    <h2>About</h2>
+    <p> Iam passionate Front-End Developer with a focus on Front-End Technologies.
+    Fresher currently pursuing in <strong>Bachelor of Computer Science(Honours)</strong>
+    Iam learning about collaborating, and team with contributing building impactful Digital Experience.
+     I have learn in HTML, CSS, Bootstrap and MS-Excel.</p></Section>
+
+     <Section id="Skills">
+        <h2>Skills</h2>
+    <ol>
+        <li>HTML</li>
+        <li>Python</li>
+        <li>CSS & Bootstrap</li>
+        <li>Basics of C Language</li>
+        <li>MS-Excel</li>
+    </ol>
+    </Section>
+
+    <section id="Projects">
+    <h2>Project</h2>
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 25%;">Project Name</th>
+                <th style="width: 20%;">Technologies Used</th>
+                <th style="width: 40%;">Description & Key Contributions</th>
+                <th style="width: 15%;">Role</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- PROJECT 1 -->
+            <tr>
+                <td><strong>Study Grid Academic Organizer</strong></td>
+                <td>HTML, CSS,CSS Grid</td>
+                <td>
+                    Developed a clean, visual weekly calendar layout to help students map out study hours and exam dates.
+                </td>
+                <td>Frontend Layout Developer</td>
+            </tr>
+            
+            <!-- PROJECT 2 -->
+            <tr>
+                <td><strong>Hue Style Web Designer Palette Board</strong></td>
+                <td>HTML,CSS,Flexbox</td>
+                <td>
+                    Built a visual web showcase displaying trending color combinations for beginner web designers.
+                </td>
+                <td>Junior Web Designer</td>
+            </tr>
+        </tbody>
+    </table>
+    </section>
+     
+    <Section id=">Contact">
+        <h2>Contact</h2>
+        <p><strong>Feel Free ToGet In Touch</strong></p>
+        <label for="name">Name:</label>
+        <input type="text"><br>
+        <label for="email">Email:</label>
+        <input type="text"><br>
+        <label for="message" align="left">Message:</label><br>
+        <textarea id="message" name="message" rows="3"></textarea><br><br>
+<div style="display: flex; justify-content: left side;">
+  <input type="submit" value="Submit" style="background-color: #ae7bca; color: white; border: none; padding: 10px 20px; cursor: pointer;">
+</div>
+ </Section>
+    </form>
+</body>
+</html>
